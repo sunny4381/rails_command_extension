@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative '../config/boot'
+
+# install application commands
+require_relative '../lib/commands/main/main_command'
+
+# run rails command
 require 'rails/commands'
